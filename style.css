@@ -1,0 +1,276 @@
+/*================================================
+Start of Full Part
+==================================================*/
+html,*{
+  margin: 0;
+  padding: 0;
+  
+  line-height: 2;
+  color: var(--primary-text-color);
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.content{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 0 0;
+}
+
+.image{
+  width: 100%;
+
+}
+
+.heading {
+  font-family: 'Inconsolata';
+  font-size: 5vw;
+  line-height: 1;
+}
+
+.subheading {
+  font-family: 'Inconsolata';
+  font-size: 1.4em;
+  line-height: 1.5;
+  width: 80%;
+  margin-top: 30px;
+  font-size: 1.75vw;
+}
+
+.arange{
+  display: flex;
+  flex-direction: space-between;
+   }  
+
+.waiting{
+  width: 100%;
+ }
+
+
+ .home a:hover {
+  color: #6c63ff;
+  border-bottom: none;
+}
+
+.home a{
+  display: flex;
+  justify-content: center;
+  box-align: center; 
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: #000;
+
+}
+
+.home a:hover {
+  color: #6c63ff;
+  border-bottom: none;
+}
+
+
+/*================================================
+End of Full Part
+==================================================*/
+
+/*================================================
+Start The Animatioc Part
+==================================================*/
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #6c63ff 0%, #6c63ff 100%);
+  border-radius: 10%;
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  background-position: 20% 90%;
+  transition: background-size 0.25s ease-in; 
+}
+
+.underline--magical:hover {
+    background-size: 100% 60%;
+  }
+
+/*================================================
+End The Animatioc Part
+==================================================*/
+
+/*================================================
+Start of Phone Part
+==================================================*/
+
+@media screen and (max-width: 768px){
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subheading{
+    font-size: 3vw;
+    width: 100%;
+  }
+
+  .image{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .waiting{
+    width: 80%;
+  }
+  
+  .underline--magical {
+    background-image: linear-gradient(120deg, #6c63ff 0%, #6c63ff 100%);
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 20% 90%;
+    transition: background-size 0.25s ease-in; 
+  } 
+
+  .home a{
+    display: flex;
+    justify-content: center;
+    box-align: center; 
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+  
+    color: #000;
+  
+   
+  }
+  .home a:hover {
+    color: #6c63ff;
+    border-bottom: none;
+  }
+}
+/*================================================
+Circile Animation
+==================================================*/
+#Ellipse_T{
+  animation: cerc 0.9s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#Ellipse_O{
+animation: cerc 0.8s ease-in-out infinite alternate;
+transform-origin: center;
+transform-box: fill-box;
+}
+
+@keyframes cerc
+{
+  from
+  {
+      transform:translateY(5%);
+
+  }
+  to
+  {
+      transform: translateY(20%);
+  }
+}
+
+
+/*================================================
+Navbar
+==================================================*/
+nav {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  top: 92%;
+  text-align: center;
+}
+nav a {
+  font-family: 'Inconsolata';
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 15px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+nav a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #6c63ff;
+  top: 100%;
+  animation: out 0.6s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+@keyframes in {
+  0% {
+      width: 0;
+      left: 0;
+      right: auto;
+ }
+  100% {
+      left: 0;
+      right: auto;
+      width: 100%;
+ }
+}
+@keyframes out {
+  0% {
+      width: 100%;
+      left: auto;
+      right: 0;
+ }
+  100% {
+      width: 0;
+      left: auto;
+      right: 0;
+ }
+}
+@keyframes show {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+ }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+ }
+}
+nav a:nth-child(1) {
+  animation: show 0.2s 0.3s ease 1 both;
+}
+nav a:nth-child(2) {
+  animation: show 0.2s 0.4s ease 1 both;
+}
+nav a:nth-child(3) {
+  animation: show 0.2s 0.5s ease 1 both;
+}
+nav a:nth-child(4) {
+  animation: show 0.2s 0.6s ease 1 both;
+}
+nav a:nth-child(5) {
+  animation: show 0.2s 0.7s ease 1 both;
+}
+
+/*================================================
+Eding of Phone Part
+==================================================*/

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inconsolata";
+}
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo{
+    padding-top: 10%;
+    padding-left: 60%;   
+    padding-right: 40%; 
+}
+
+
+#poly_one{
+
+    animation: anim 0.9s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+#poly_two{
+
+    animation: anim 0.8s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+#poly_three{
+
+    animation: anim 0.7s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+@keyframes anim
+{
+    from
+    {
+        transform: translateY(2%);
+
+    }
+    to
+    {
+        transform: translateY(10%);
+    }
+}
+
+

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
+    transition: all 0.2s linear;
+  }
+  h1{
+    padding-top: 3%;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Inconsolata';
+  
+}
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+  
+  :root {
+    --primary-bg-color: #eee;
+    --secondary-bg-color: #fff;
+    --primary-text-color: #666;
+    --secondary-text-color: #999;
+  }
+  
+  body.active {
+    --primary-bg-color: #222;
+    --secondary-bg-color: #333;
+    --primary-text-color: #fff;
+    --secondary-text-color: #eee;
+  }
+  
+  
+  body {
+    background: var(--primary-bg-color);
+  }
+  
+  .container {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .container .content {
+    width: 400px;
+    background: var(--secondary-bg-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container .content p {
+    line-height: 2;
+    color: var(--primary-text-color);
+  }
+  
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .underline--magical {
+    background-image: linear-gradient(120deg, #6c63ff 0%, #6c63ff 100%);
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 4px;
+    background-position: 20% 90%;
+    transition: background-size 0.25s ease-in; 
+  }
+  
+  .underline--magical:hover {
+      background-size: 100% 60%;
+      
+    }
+
+    .home a{
+        display: flex;
+        justify-content: center;
+        box-align: center; 
+        margin-bottom: 5%;
+        text-decoration: none;
+        font-family: 'Inconsolata';
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+      
+       
+      }
+      .home a:hover {
+        color: #6c63ff;
+        border-bottom: none;
+      }   

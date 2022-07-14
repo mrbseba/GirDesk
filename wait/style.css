@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inconsolata";
+}
+
+.coming_soon {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--primary-text-color);
+}
+
+h2 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 5rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.day, .hour, .minute, .second {
+  font-size: 3rem;
+}
+
+.waiting {
+  height: 40vh;
+  margin-top: 3rem;
+}
+
+.thx {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+
+nav {
+  margin-top: 3%;
+  width: 100%;
+  top: 92%;
+  text-align: center;
+}
+
+nav a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #6c63ff;
+  top: 100%;
+  -webkit-animation: out 0.6s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+          animation: out 0.6s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+nav a:hover:before {
+  -webkit-animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+          animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+@-webkit-keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+@-webkit-keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+nav a:nth-child(1) {
+  -webkit-animation: show 0.2s 0.3s ease 1 both;
+          animation: show 0.2s 0.3s ease 1 both;
+}
+
+nav a:nth-child(2) {
+  -webkit-animation: show 0.2s 0.4s ease 1 both;
+          animation: show 0.2s 0.4s ease 1 both;
+}
+
+nav a:nth-child(3) {
+  -webkit-animation: show 0.2s 0.5s ease 1 both;
+          animation: show 0.2s 0.5s ease 1 both;
+}
+
+nav a:nth-child(4) {
+  -webkit-animation: show 0.2s 0.6s ease 1 both;
+          animation: show 0.2s 0.6s ease 1 both;
+}
+
+nav a:nth-child(5) {
+  -webkit-animation: show 0.2s 0.7s ease 1 both;
+          animation: show 0.2s 0.7s ease 1 both;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-family: "Inconsolata";
+  }
+
+  .coming_soon {
+    margin: 10%;
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2 {
+    margin-left: 10%;
+    font-size: 3rem;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .day, .hour, .minute, .second {
+    font-size: 1rem;
+  }
+
+  .waiting {
+    height: 20vh;
+    margin-top: 1rem;
+  }
+
+  .donate a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .donate a:hover {
+    color: #6c63ff;
+    border-bottom: none;
+  }
+}/*# sourceMappingURL=style.css.map */

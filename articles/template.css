@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Times New Roman", Times, serif;
+    background: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+/*arangarea textului general*/
+.content{
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1{
+    padding-top: 5%;
+    text-align: center;
+}
+h2{
+    padding-bottom: 1%;
+}
+
+h3{
+    padding-bottom: 2%;
+}
+
+p{
+    padding-bottom: 2%;
+    text-align: justify;
+
+}
+
+
+/*aranjarea imaginei*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 15rem;
+    height: 15rem;  
+}
+
+.image-corection{
+    text-align: center;
+    font-size: 120%;
+}
+/*aranjarea listei*/
+ul{
+    padding-bottom: 1%;
+    padding-left: 1.3%;
+}
+
+
+/*Darkmode Part*/
+
+:root {
+    --primary-bg-color: #eee;
+    --secondary-bg-color: #fff;
+    --primary-text-color: #000;
+    --secondary-text-color: #000;
+}
+  
+  body.active {
+    --primary-bg-color: #222;
+    --secondary-bg-color: #333;
+    --primary-text-color: #FAFAFA;
+    --secondary-text-color: #FAFAFA;
+  }
+  
+
+#theme-toggler {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+
+  font-size: 30px;
+  background: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+  border-radius: 200px;
+}
+
+
+
